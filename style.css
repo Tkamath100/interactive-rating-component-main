@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+}
+body{
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    margin:1.5rem;
+    background-color: hsl(216, 12%, 8%);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container1,.container2{
+    background-color: hsl(213, 19%, 18%);
+    color:hsl(0, 0%, 100%);
+    padding:2rem;
+    padding-bottom: 0.3rem;
+    border-radius: 2rem;
+    max-width: 35%;
+}
+@media (max-width:950px){
+    .container1,.container2{
+        max-width: 55% !important;
+    }
+}
+@media (max-width:620px){
+    .container1,.container2{
+        max-width: 90% !important;
+    }
+}
+ul{
+    list-style:none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -2rem;
+    margin-top: 0.7rem;
+}
+h2{
+    line-height: 1.5;
+    margin:1.5rem 0;
+}
+p{
+    color:hsl(217, 12%, 63%);
+    line-height: 1.5;
+}
+/* rating button */
+.list-item>.btn{
+    background-color:hsl(214, 17%, 26%) ;
+    border-style: none;
+    width:2.5rem;
+    height:2.5rem;
+    border-radius: 50%;
+    color:hsl(217, 12%, 63%);
+    padding:0.6rem;
+}
+.list-item>.btn:hover{
+    background-color: hsl(25, 97%, 53%);
+    color:hsl(218, 33%, 89%);
+    transition: 0.5s;
+}
+.list-item>.btn:focus{
+    background-color: hsl(27, 6%, 61%);
+    color:#000;
+}
+.button-main{
+    width:100%;
+    border-radius: 1rem;
+    border-style: none;
+    padding:10px;
+    margin: 1.5rem auto;
+    background-color: hsl(25, 97%, 53%);
+    color:#fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+.button-main:hover{
+    width:100%;
+    border-radius: 1.2rem;
+    border-style:none;
+    padding:10px;
+    margin: 1.5rem auto;
+    background-color: hsl(25, 89%, 64%);
+    transition: 0.5s;
+    color:#fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.6;
+    box-shadow: 3px 3px hsl(0, 3%, 7%);
+}
+.img{
+    display: inline-block;
+    background-color: hsl(214, 17%, 26%);
+    height:3rem;
+    width: 3rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 100%;
+}
+div> a:hover{
+   color: rgb(179, 99, 33);
+   transition:0.8s;
+}
+
+/* Thank you section */
+.container2{
+    text-align: center;
+}
+.thankyou-img{
+    display:block;
+    margin:0 auto 1.5rem;
+}
+.container2 h2{
+    margin:1rem;
+}
+.container2 .rating{
+    padding:6px;
+    width:80%;
+    margin: 0 auto;;
+    padding-bottom: 0.6px;
+    background-color: hsl(214, 17%, 26%);
+    color:rgb(235, 59, 59);
+    border-radius: 40px;
+}
+.container2 p{
+    padding-bottom: 1.2rem;
+    padding-right:1.2rem;
+    padding-left: 1.2rem;
+}
+.hidden{
+    display: none;
+}
+footer{
+    margin:0 auto;
+    margin-top: 5rem;
+    color:antiquewhite;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+}
